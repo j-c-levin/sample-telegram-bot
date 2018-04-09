@@ -16,11 +16,7 @@ An example telegram bot using typescript and telegraf for learning purposes.
 7) Create a .env file in the root directory
 8) Populate it with the following fields: 
 ```
-DEVELOPMENT=true
 BOT_TOKEN=[your bot token from telegram's botfather]
-PORT=80
-SECRET_PATH=[some random string]
-BOT_NAME=[the username of your bot on telegram]
 ```
 
 ## Quick launch

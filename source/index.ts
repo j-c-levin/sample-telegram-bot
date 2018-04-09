@@ -7,17 +7,13 @@ dotenv.config();
 async function init() {
   // Initialise the bot
   const bot = new telegraf(process.env.BOT_TOKEN);
-  bot.telegram.getMe()
-    .then(() => {
-      bot.options.username = process.env.BOT_NAME;
-    });
   // Start ngrok if not deployed
-  const url = (typeof process.env.DEVELOPMENT !== 'undefined') ? await ngrok.connect(80) : process.env.URL;
+  const url = await ngrok.connect(80);
   // Set up the commands the bot will respond too
   setupHandlers(bot);
   // Set up and start the webhook
-  bot.telegram.setWebhook(`${url}/${process.env.SECRET_PATH}`);
-  bot.startWebhook(`/${process.env.SECRET_PATH}`, null, process.env.PORT);
+  bot.telegram.setWebhook(`${url}/secretpathhere`);
+  bot.startWebhook(`/secretpathhere`, null, 80);
   console.log("bot running");
 }
 
