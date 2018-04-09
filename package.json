@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node source/index.ts",
-    "develop": "nodemon --watch server --exec ts-node source/index.ts --inspect"
+    "develop": "nodemon --watch source --exec ts-node source/index.ts --inspect"
   },
   "repository": {
     "type": "git",
