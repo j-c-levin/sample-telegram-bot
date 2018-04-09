@@ -6,7 +6,7 @@ An example telegram bot using typescript and telegraf for learning purposes.
 1) Download node and npm: https://nodejs.org/en/
 2) Download this repository using a git client or as a zip file that you extract
 3) Navigate to the root directory in a command line (with package.json)
-4) Run `npm run install`
+4) Run `npm install`
 
 ## Set up environment variables
 5) Create a .env file in the root directory
