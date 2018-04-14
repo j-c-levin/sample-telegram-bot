@@ -1,6 +1,9 @@
 # sample-telegram-bot
 An example telegram bot using typescript and telegraf for learning purposes.
 
+# Video walkthrough
+You can watch a demonstration of me setting up a bot using this guide here: https://youtu.be/8QkFOnwZXSU
+
 # Create your bot
 1) In telegram search for 'botfather' and create a new bot
 2) Copy the access token that the botfather gives you
